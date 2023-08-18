@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class OpenPDFCompressor {
 	public static void main(String[] args) {
-		String inputFilePath = "c:/pdf/sample-25mb.pdf";
+		String inputFilePath = "c:/pdf/sample-10mb.pdf";
 		String outputFilePath = "c:/pdf/sample-compressed-openPDF.pdf";
 
 		try {

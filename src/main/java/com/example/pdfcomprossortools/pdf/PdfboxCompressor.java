@@ -30,7 +30,7 @@ public class PdfboxCompressor {
 
 public static void compressWithImage() throws IOException {
 	// Paths for input and output PDFs
-	String inputPath = "c:/pdf/sample-14mb.pdf";
+	String inputPath = "c:/pdf/sample-10mb.pdf";
 	String outputPath = "c:/pdf/sample-compressed-PDFBox.pdf";
 
 	// Load the existing PDF

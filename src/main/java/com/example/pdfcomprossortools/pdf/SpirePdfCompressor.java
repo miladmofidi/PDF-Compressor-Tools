@@ -16,7 +16,7 @@ public class SpirePdfCompressor {
 
 
 		//Load a PDF document while initializing the PdfCompressor object
-		PdfCompressor compressor = new PdfCompressor("C:\\pdf\\sample-50mb.pdf");
+		PdfCompressor compressor = new PdfCompressor("C:\\pdf\\sample-10mb.pdf");
 
 		//Get text compression options
 		TextCompressionOptions textCompression = compressor.getOptions().getTextCompressionOptions();
