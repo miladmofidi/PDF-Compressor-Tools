@@ -1,4 +1,4 @@
-package com.example.pdfcomprossortools.pdf;
+package com.example.pdfcomprossortools.pdf.openpdf_sample;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.Paragraph;
@@ -18,7 +18,7 @@ import java.io.IOException;
  * 8/17/2023
  */
 @RestController
-public class PdfGeneratorWithOpenPDFController {
+public class OpenPDFGeneratorController {
 
 	@GetMapping("/pdfTobyte")
 	public ResponseEntity<byte[]> generateAndReturnPdfAsByteArray() throws IOException {

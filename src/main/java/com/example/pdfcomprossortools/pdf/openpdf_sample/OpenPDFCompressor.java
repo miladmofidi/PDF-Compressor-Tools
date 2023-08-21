@@ -1,4 +1,4 @@
-package com.example.pdfcomprossortools.pdf;
+package com.example.pdfcomprossortools.pdf.openpdf_sample;
 
 /**
  * @author Milad Mofidi (milad.mofidi@cmas-systems.com)

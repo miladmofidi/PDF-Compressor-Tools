@@ -1,4 +1,4 @@
-package com.example.pdfcomprossortools.pdf;
+package com.example.pdfcomprossortools.pdf.spire_sample;
 
 import com.spire.pdf.conversion.compression.ImageCompressionOptions;
 import com.spire.pdf.conversion.compression.ImageQuality;
@@ -31,13 +31,13 @@ public class SpirePdfCompressor {
 		ImageCompressionOptions imageCompression = compressor.getOptions().getImageCompressionOptions();
 
 		//Set the compressed image quality
-		imageCompression.setImageQuality( ImageQuality.Low);
+		imageCompression.setImageQuality( ImageQuality.Medium);
 
 		//Resize images
 		imageCompression.setResizeImages(true);
 
 		//Compress images
-		imageCompression.setCompressImage(true);
+		//imageCompression.setCompressImage(true);
 
 		//Save the compressed document to file
 		compressor.compressToFile("C:\\pdf\\sample-compressed-SpirePDF.pdf");

@@ -1,4 +1,4 @@
-package com.example.pdfcomprossortools.pdf;
+package com.example.pdfcomprossortools.pdf.itext_samle;
 
 /**
  * @author Milad Mofidi (milad.mofidi@cmas-systems.com)
@@ -11,7 +11,7 @@ import com.itextpdf.kernel.pdf.WriterProperties;
 
 import java.io.IOException;
 
-public class PdfCompressionWithiTextSimple {
+public class iTextPDFCompressorSimple {
 
 	public static void main(String[] args) throws IOException {
 		// Paths for input and output PDFs

@@ -1,7 +1,7 @@
-package com.example.pdfcomprossortools.pdf;
+package com.example.pdfcomprossortools.pdf.itext_samle;
 
 /**
- * @author Milad Mofidi (milad.mofidi@cmas-systems.com)
+ * @author Milad Mofidi (milad.mofidi@gmail.com)
  * 8/18/2023
  */
 
@@ -15,7 +15,7 @@ import com.itextpdf.kernel.pdf.canvas.PdfCanvas;
 import com.itextpdf.kernel.pdf.xobject.PdfFormXObject;
 import com.itextpdf.layout.Document;
 
-public class CompressPDFiTextJustOnePage {
+public class ITextPDFCompressOnePage {
 	public static void main(String args[]) throws Exception {
 		// Creating a PdfWriter object
 		String dest = "c:/pdf/sample-compressed-iText.pdf";
@@ -28,12 +28,6 @@ public class CompressPDFiTextJustOnePage {
 		// Creating a PdfDocument objects
 		PdfDocument destpdf = new PdfDocument(writer);
 		PdfDocument srcPdf = new PdfDocument(reader);
-
-
-
-
-
-
 
 		// Opening a page from the existing PDF
 		PdfPage origPage = srcPdf.getPage(1);

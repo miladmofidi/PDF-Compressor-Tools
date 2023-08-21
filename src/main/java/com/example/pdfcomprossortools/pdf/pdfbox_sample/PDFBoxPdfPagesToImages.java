@@ -1,4 +1,4 @@
-package com.example.pdfcomprossortools.pdf;
+package com.example.pdfcomprossortools.pdf.pdfbox_sample;
 
 /**
  * @author Milad Mofidi (milad.mofidi@cmas-systems.com)
@@ -20,9 +20,9 @@ import java.io.File;
 import java.io.IOException;
 
 
-public class PdfPagesToImagesPDFBox {
+public class PDFBoxPdfPagesToImages {
 
-	public PdfPagesToImagesPDFBox() {
+	public PDFBoxPdfPagesToImages() {
 
 	}
 

@@ -1,4 +1,4 @@
-package com.example.pdfcomprossortools.pdf;
+package com.example.pdfcomprossortools.pdf.pdfbox_sample;
 
 /**
  * @author Milad Mofidi (milad.mofidi@cmas-systems.com)
@@ -28,7 +28,7 @@ public class PdfboxCompressor {
 		saveCompressedPDF();
 	}
 
-public static void compressWithImage() throws IOException {
+public static void compressPdfWithImage() throws IOException {
 	// Paths for input and output PDFs
 	String inputPath = "c:/pdf/sample-10mb.pdf";
 	String outputPath = "c:/pdf/sample-compressed-PDFBox.pdf";
@@ -76,34 +76,7 @@ public static void compressWithImage() throws IOException {
 	System.out.println("PDF compressed and saved to " + outputPath);
 }
 
-/*	public static void shrink2() throws IOException {
-		PDDocument doc;
-		String inputPath = "c:/pdf/sample-6mb.pdf";
-		doc = Loader.loadPDF( new File( "c:/pdf/sample-6mb.pdf" ) ) ;
 
-		doc.getDocument().setIsXRefStream(true);
-		if (doc.getVersion() < 1.5f){
-			doc.setVersion(1.5f);
-		}
-
-		PDStream stream = new PDStream(doc);
-		stream.addCompression();
-		doc.save("c:/pdf/sample-compressed-PDFBox.pdf");
-		System.out.println("Compress has been done");
-		doc.close();
-	}*/
-
-	public static void shrink3() throws IOException {
-		try (PDDocument doc = Loader.loadPDF( new File( "c:/pdf/sample-6mb.pdf" ) ) )
-		{
-			PDStream stream = new PDStream(doc);
-
-			for (PDPage page : doc.getPages())
-			{
-
-			}
-		}
-	}
 	static void saveCompressedPDF() throws IOException {
 		PDDocument srcDoc = Loader.loadPDF( new File( "c:/pdf/sample-10mb.pdf" ) );
 		PDDocument outDoc = new PDDocument();
